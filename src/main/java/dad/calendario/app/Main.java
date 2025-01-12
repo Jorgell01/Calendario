@@ -3,5 +3,7 @@ package dad.calendario.app;
 import javafx.application.Application;
 
 public class Main {
-    Application.launch(CalendarioApp.class);
+    public static void main(String[] args) {
+        Application.launch(CalendarioApp.class, args);
+    }
 }

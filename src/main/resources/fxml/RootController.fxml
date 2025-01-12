@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.layout.Region?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            prefHeight="400.0" prefWidth="600.0">
+<BorderPane fx:id="root" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+    <!-- Barra superior con el nombre del programa -->
+    <top>
+        <HBox alignment="CENTER" spacing="10" style="-fx-padding: 10; -fx-background-color: #f0f0f0;">
+            <Button fx:id="prevButton" text="◀" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="nextButton" text="▶" />
+        </HBox>
+    </top>
 
-</AnchorPane>
+    <!-- Panel central con el grid del calendario -->
+    <center>
+        <GridPane fx:id="calendarGrid" hgap="10" style="-fx-padding: 10;" vgap="10" />
+    </center>
+</BorderPane>
