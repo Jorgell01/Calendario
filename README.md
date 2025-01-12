@@ -39,7 +39,7 @@ CalendarioApp es una aplicación JavaFX que muestra un calendario con la capacid
 3. **Ejecutar la aplicación:**
 
     ```sh
-    mvn exec:java -Dexec.mainClass="dad.calendario.app.CalendarioApp"
+    mvn exec:java
     ```
 
 ## Licencia
