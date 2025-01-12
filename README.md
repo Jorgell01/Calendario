@@ -41,7 +41,3 @@ CalendarioApp es una aplicación JavaFX que muestra un calendario con la capacid
     ```sh
     mvn exec:java
     ```
-
-## Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT.
